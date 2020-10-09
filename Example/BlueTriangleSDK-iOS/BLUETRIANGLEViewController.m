@@ -7,6 +7,8 @@
 //
 
 #import "BLUETRIANGLEViewController.h"
+#import <BTTimer.h>
+#import <BTTracker.h>
 
 @interface BLUETRIANGLEViewController ()
 
@@ -18,6 +20,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    BTTimer *timer = [BTTimer timerWithPageName:@"page-name-1" trafficSegment:@"traffic-segment-1"];
+    [timer setCampaignName:@"campaign-1"];
+    [timer setCampaignMedium:@"mobile-ios"];
+    [timer setField:@"CV1" stringValue:@"This is a custom Variable"];
+    [timer start];
+    [[BTTracker sharedTracker] submitTimer:timer];
 }
 
 - (void)didReceiveMemoryWarning
