@@ -204,47 +204,46 @@
     Resets a field to the default value if there is one else removes the field completely.
     @param fieldName name of field to remove
  */
-- (void)clearField:(NSString *)fieldName;
+- (void)clearField:(nonnull NSString *)fieldName;
 
 /*!
     Get all the fields currently associated with this timer.
     @return Returns a Dictionary with all the fields currently.
  */
-- (NSDictionary *)allFields;
+- (nullable NSDictionary *)allFields;
 
 @end
 
-extern NSString * const kLogTag;
-extern NSString * const kExtraTimer;
-
-extern NSString * const kPageName;
-extern NSString * const kNST;
-extern NSString * const kUnloadEventStart;
-extern NSString * const kContentGroupName;
-extern NSString * const kPageValue;
-extern NSString * const kPageTime;
-extern NSString * const kDomInteractive;
-extern NSString * const kNavigationType;
-extern NSString * const kCartValue;
-extern NSString * const kOrderNumber;
-extern NSString * const kOrderTime;
-extern NSString * const kEventType;
-extern NSString * const kSiteID;
-extern NSString * const kTrafficSegmentName;
-extern NSString * const kCampaign;
-extern NSString * const kTimeOnPage;
-extern NSString * const kBrandValue;
-extern NSString * const kURL;
-extern NSString * const kBVZN;
-extern NSString * const kOS;
-extern NSString * const kSessionID;
-extern NSString * const kGlobalUserID;
-extern NSString * const kCustomValue4;
-extern NSString * const kRV;
-extern NSString * const kWCD;
-extern NSString * const kABTestID;
-extern NSString * const kCampaignSource;
-extern NSString * const kCampaignMedium;
-extern NSString * const kCampaignName;
-extern NSString * const kDataCenter;
-extern NSString * const kReferrerURL;
+extern NSString * _Nullable const kLogTag;
+extern NSString * _Nullable const kExtraTimer;
+extern NSString * _Nullable const kPageName;
+extern NSString * _Nullable const kNST;
+extern NSString * _Nullable const kUnloadEventStart;
+extern NSString * _Nullable const kContentGroupName;
+extern NSString * _Nullable const kPageValue;
+extern NSString * _Nullable const kPageTime;
+extern NSString * _Nullable const kDomInteractive;
+extern NSString * _Nullable const kNavigationType;
+extern NSString * _Nullable const kCartValue;
+extern NSString * _Nullable const kOrderNumber;
+extern NSString * _Nullable const kOrderTime;
+extern NSString * _Nullable const kEventType;
+extern NSString * _Nullable const kSiteID;
+extern NSString * _Nullable const kTrafficSegmentName;
+extern NSString * _Nullable const kCampaign;
+extern NSString * _Nullable const kTimeOnPage;
+extern NSString * _Nullable const kBrandValue;
+extern NSString * _Nullable const kURL;
+extern NSString * _Nullable const kBVZN;
+extern NSString * _Nullable const kOS;
+extern NSString * _Nullable const kSessionID;
+extern NSString * _Nullable const kGlobalUserID;
+extern NSString * _Nullable const kCustomValue4;
+extern NSString * _Nullable const kRV;
+extern NSString * _Nullable const kWCD;
+extern NSString * _Nullable const kABTestID;
+extern NSString * _Nullable const kCampaignSource;
+extern NSString * _Nullable const kCampaignMedium;
+extern NSString * _Nullable const kCampaignName;
+extern NSString * _Nullable const kDataCenter;
+extern NSString * _Nullable const kReferrerURL;

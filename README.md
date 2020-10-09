@@ -22,7 +22,7 @@ pod 'BlueTriangleSDK-iOS'
 
 ## Author
 
-julianduranmt@yahoo.com, julian.wilkison@bluetriangle.com
+Julian Wilkison-Duran, julian.wilkison@bluetriangle.com
 
 ## License
 
