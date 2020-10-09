@@ -2,8 +2,8 @@
 //  BlueTriangleSDK-iOSTests.m
 //  BlueTriangleSDK-iOSTests
 //
-//  Created by julianduranmt@yahoo.com on 10/09/2020.
-//  Copyright (c) 2020 julianduranmt@yahoo.com. All rights reserved.
+//  Created by Julian Wilkison-Duran on 10/09/2020.
+//  Copyright (c) 2020 Blue Triangle. All rights reserved.
 //
 
 @import XCTest;

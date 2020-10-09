@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		13EEF43A34E5329592303914 /* Pods-BlueTriangleSDK-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueTriangleSDK-iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-BlueTriangleSDK-iOS_Tests/Pods-BlueTriangleSDK-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2B0E66200B50FEAA020E8A37 /* Pods_BlueTriangleSDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueTriangleSDK_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EDAE60416846E5B17FE0CD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3EDAE60416846E5B17FE0CD8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		51BD1099C7B94B5DB020072E /* Pods-BlueTriangleSDK-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueTriangleSDK-iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-BlueTriangleSDK-iOS_Example/Pods-BlueTriangleSDK-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BlueTriangleSDK-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueTriangleSDK-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,9 +64,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C8336FAD042738A44C3110F /* Pods-BlueTriangleSDK-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueTriangleSDK-iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BlueTriangleSDK-iOS_Tests/Pods-BlueTriangleSDK-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3F3FE4C60E61654FAE2323C /* Pods_BlueTriangleSDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueTriangleSDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7AA1555A2750F945F65738D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A7AA1555A2750F945F65738D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BEFCF8A280FF28C0BEF19208 /* Pods-BlueTriangleSDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueTriangleSDK-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-BlueTriangleSDK-iOS_Example/Pods-BlueTriangleSDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA23282227E012FB58176BC8 /* BlueTriangleSDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "BlueTriangleSDK-iOS.podspec"; path = "../BlueTriangleSDK-iOS.podspec"; sourceTree = "<group>"; };
+		FA23282227E012FB58176BC8 /* BlueTriangleSDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "BlueTriangleSDK-iOS.podspec"; path = "../BlueTriangleSDK-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				8C8336FAD042738A44C3110F /* Pods-BlueTriangleSDK-iOS_Tests.debug.xcconfig */,
 				13EEF43A34E5329592303914 /* Pods-BlueTriangleSDK-iOS_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-Prefix.pch";
 				INFOPLIST_FILE = "BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-Prefix.pch";
 				INFOPLIST_FILE = "BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

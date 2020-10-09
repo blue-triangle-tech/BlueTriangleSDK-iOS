@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BlueTriangleSDK-iOS'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BlueTriangleSDK-iOS.'
+  s.summary          = 'Blue Triangle SDK exposes methods to push analytics data to the portal '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Blue Triangle SDK exposes methods to push analytics data to the portal via HTTP Post
                        DESC
 
-  s.homepage         = 'https://github.com/julianduranmt@yahoo.com/BlueTriangleSDK-iOS'
+  s.homepage         = 'https://bluetrianglemarketing.github.io/BlueTriangleSDK-iOS/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'julianduranmt@yahoo.com' => 'julian.wilkison@bluetriangle.com' }
-  s.source           = { :git => 'https://github.com/julianduranmt@yahoo.com/BlueTriangleSDK-iOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Julian Wilkison-Duran' => 'julian.wilkison@bluetriangle.com' }
+  s.source           = { :git => 'https://github.com/BlueTriangleMarketing/BlueTriangleSDK-iOS.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/_BlueTriangle'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'BlueTriangleSDK-iOS/Classes/**/*'
   
