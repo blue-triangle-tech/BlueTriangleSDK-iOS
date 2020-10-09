@@ -15,8 +15,18 @@
 		7F5EE7352D958951411828193A45C349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		89AB9BF592B574C964DCC3B39D97335B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BAE571399D58497A75AC9F3E8290C0D1 /* BlueTriangleSDK-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22111D1E8E26913713E1B3678B2AC62E /* BlueTriangleSDK-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E545210D2530C812008C6E89 /* BTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E54521082530C811008C6E89 /* BTTimer.m */; };
+		E545210E2530C812008C6E89 /* BTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = E54521092530C812008C6E89 /* BTTracker.m */; };
+		E545210F2530C812008C6E89 /* BlueTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = E545210A2530C812008C6E89 /* BlueTriangle.h */; };
+		E54521102530C812008C6E89 /* BTTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E545210B2530C812008C6E89 /* BTTracker.h */; };
+		E54521112530C812008C6E89 /* BTTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = E545210C2530C812008C6E89 /* BTTimer.h */; };
+		E545211D2530C851008C6E89 /* ThreadSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = E54521172530C851008C6E89 /* ThreadSafeMutableDictionary.h */; };
+		E545211E2530C851008C6E89 /* BTUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E54521182530C851008C6E89 /* BTUploadOperation.h */; };
+		E545211F2530C851008C6E89 /* BTUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E54521192530C851008C6E89 /* BTUploader.m */; };
+		E54521202530C851008C6E89 /* BTUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = E545211A2530C851008C6E89 /* BTUploader.h */; };
+		E54521212530C851008C6E89 /* BTUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E545211B2530C851008C6E89 /* BTUploadOperation.m */; };
+		E54521222530C851008C6E89 /* ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E545211C2530C851008C6E89 /* ThreadSafeMutableDictionary.m */; };
 		EE8A4F96875346EDE104639AEA8AF876 /* Pods-BlueTriangleSDK-iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFFA1CB136C01E9A2CC6EE6A6E2E6C3 /* Pods-BlueTriangleSDK-iOS_Tests-dummy.m */; };
-		F6CF51404EB6C55DB0E46E8226C83E30 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EFCF1EECDE3E2E9B00DE79DDBCB7F7 /* ReplaceMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +74,20 @@
 		92E092FCAE16DF2452EFB72CD0C6CA71 /* Pods_BlueTriangleSDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueTriangleSDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE0249E2FA302AE5B5EBEAB2F7C253 /* Pods-BlueTriangleSDK-iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlueTriangleSDK-iOS_Tests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3EFCF1EECDE3E2E9B00DE79DDBCB7F7 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = "BlueTriangleSDK-iOS/Classes/ReplaceMe.m"; sourceTree = "<group>"; };
 		BCFFA1CB136C01E9A2CC6EE6A6E2E6C3 /* Pods-BlueTriangleSDK-iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueTriangleSDK-iOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		BFA62BE8E3BAEFBECE7F2BD031AB7A2D /* BlueTriangleSDK-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "BlueTriangleSDK-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD00262FF4601DEA31C9D4E4247C5A7C /* BlueTriangleSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueTriangleSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E54521082530C811008C6E89 /* BTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTimer.m; sourceTree = "<group>"; };
+		E54521092530C812008C6E89 /* BTTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTracker.m; sourceTree = "<group>"; };
+		E545210A2530C812008C6E89 /* BlueTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueTriangle.h; sourceTree = "<group>"; };
+		E545210B2530C812008C6E89 /* BTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTracker.h; sourceTree = "<group>"; };
+		E545210C2530C812008C6E89 /* BTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTimer.h; sourceTree = "<group>"; };
+		E54521172530C851008C6E89 /* ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
+		E54521182530C851008C6E89 /* BTUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUploadOperation.h; sourceTree = "<group>"; };
+		E54521192530C851008C6E89 /* BTUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTUploader.m; sourceTree = "<group>"; };
+		E545211A2530C851008C6E89 /* BTUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUploader.h; sourceTree = "<group>"; };
+		E545211B2530C851008C6E89 /* BTUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTUploadOperation.m; sourceTree = "<group>"; };
+		E545211C2530C851008C6E89 /* ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		F24E573D9B56A16C27DE7D8A15F9895A /* Pods_BlueTriangleSDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueTriangleSDK_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DE2EF4B1D2D436187C01C9FF7B9F35 /* Pods-BlueTriangleSDK-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueTriangleSDK-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +123,17 @@
 		2447BC0CF46891BCEC8109E187016698 /* BlueTriangleSDK-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A3EFCF1EECDE3E2E9B00DE79DDBCB7F7 /* ReplaceMe.m */,
+				E545211A2530C851008C6E89 /* BTUploader.h */,
+				E54521192530C851008C6E89 /* BTUploader.m */,
+				E54521182530C851008C6E89 /* BTUploadOperation.h */,
+				E545211B2530C851008C6E89 /* BTUploadOperation.m */,
+				E54521172530C851008C6E89 /* ThreadSafeMutableDictionary.h */,
+				E545211C2530C851008C6E89 /* ThreadSafeMutableDictionary.m */,
+				E545210A2530C812008C6E89 /* BlueTriangle.h */,
+				E545210C2530C812008C6E89 /* BTTimer.h */,
+				E54521082530C811008C6E89 /* BTTimer.m */,
+				E545210B2530C812008C6E89 /* BTTracker.h */,
+				E54521092530C812008C6E89 /* BTTracker.m */,
 				6B32BB8C65426025516B05DF07D1DE1D /* Pod */,
 				252A4E9A6B3D4F8E880C8867A03E8174 /* Support Files */,
 			);
@@ -238,7 +268,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E545211D2530C851008C6E89 /* ThreadSafeMutableDictionary.h in Headers */,
+				E54521202530C851008C6E89 /* BTUploader.h in Headers */,
+				E545210F2530C812008C6E89 /* BlueTriangle.h in Headers */,
+				E54521102530C812008C6E89 /* BTTracker.h in Headers */,
+				E54521112530C812008C6E89 /* BTTimer.h in Headers */,
 				BAE571399D58497A75AC9F3E8290C0D1 /* BlueTriangleSDK-iOS-umbrella.h in Headers */,
+				E545211E2530C851008C6E89 /* BTUploadOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E545210E2530C812008C6E89 /* BTTracker.m in Sources */,
 				3FCE9618AFA5FFCA6608C7CF7B196DF2 /* BlueTriangleSDK-iOS-dummy.m in Sources */,
-				F6CF51404EB6C55DB0E46E8226C83E30 /* ReplaceMe.m in Sources */,
+				E54521212530C851008C6E89 /* BTUploadOperation.m in Sources */,
+				E54521222530C851008C6E89 /* ThreadSafeMutableDictionary.m in Sources */,
+				E545210D2530C812008C6E89 /* BTTimer.m in Sources */,
+				E545211F2530C851008C6E89 /* BTUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
