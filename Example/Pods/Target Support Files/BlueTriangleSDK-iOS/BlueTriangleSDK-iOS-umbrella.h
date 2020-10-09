@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import <BlueTriangleSDK_iOS/BlueTriangle.h>
+#import <BlueTriangleSDK_iOS/BTTimer.h>
+#import <BlueTriangleSDK_iOS/BTTracker.h>
+#import <BlueTriangleSDK_iOS/BTUploader.h>
+#import <BlueTriangleSDK_iOS/BTUploadOperation.h>
+#import <BlueTriangleSDK_iOS/ThreadSafeMutableDictionary.h>
 
 FOUNDATION_EXPORT double BlueTriangleSDK_iOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char BlueTriangleSDK_iOSVersionString[];
