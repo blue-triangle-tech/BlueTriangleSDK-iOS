@@ -7,11 +7,14 @@
 //
 
 #import "BLUETRIANGLEAppDelegate.h"
+#import <BlueTriangle.h>
 
 @implementation BLUETRIANGLEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [[BTTracker sharedTracker] setSiteID:@"demosports"];
     // Override point for customization after application launch.
     return YES;
 }

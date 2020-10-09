@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BTTracker.h"
-#import "BTTimer.h"
+#import <BlueTriangleSDK_iOS/BTTracker.h>
+#import <BlueTriangleSDK_iOS/BTTimer.h>
 
 //! Project version number for BlueTriangle.
 FOUNDATION_EXPORT double BlueTriangleVersionNumber;
