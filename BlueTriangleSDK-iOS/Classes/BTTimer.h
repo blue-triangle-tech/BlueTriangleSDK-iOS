@@ -206,6 +206,8 @@
  */
 - (void)clearField:(nonnull NSString *)fieldName;
 
+- (NSString *)getField:(NSString *)fieldName;
+
 /*!
     Get all the fields currently associated with this timer.
     @return Returns a Dictionary with all the fields currently.

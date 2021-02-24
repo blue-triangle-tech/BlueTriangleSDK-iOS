@@ -42,13 +42,15 @@
 
     NSError *error = nil;
     NSData *data = [NSJSONSerialization dataWithJSONObject:_timer.allFields options:kNilOptions error:&error];
-
+    
     if (!error) {
         __weak typeof(self) weakSelf = self;
         NSURLSessionUploadTask *uploadTask = [session uploadTaskWithRequest:urlRequest fromData:[data base64EncodedDataWithOptions: 0] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             if (error) {
                 weakSelf.retryCount += 1;
             }
+            NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+            NSLog(@"ERROR: %@ AND HTTP Status : %ld", error, (long)httpResp.statusCode);
 
             [weakSelf updateSuccessful:!error];
         }];

@@ -7,7 +7,7 @@
 //
 
 #import "BLUETRIANGLEAppDelegate.h"
-#import <BlueTriangle.h>
+#import <BlueTriangle
 
 @implementation BLUETRIANGLEAppDelegate
 
@@ -15,6 +15,7 @@
 {
     
     [[BTTracker sharedTracker] setSiteID:@"demosports"];
+    [[BTTracker sharedTracker] setSessionID:@"mySessionIdHere"];
     // Override point for customization after application launch.
     return YES;
 }

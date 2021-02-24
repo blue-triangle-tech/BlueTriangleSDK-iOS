@@ -249,6 +249,11 @@ static NSDictionary *defaultFields() {
     [_timerFields removeObjectForKey:fieldName];
 }
 
+- (NSString *)getField:(NSString *)fieldName  {
+    return [_timerFields objectForKey:fieldName];
+    
+}
+
 - (NSDictionary *)allFields {
     return _timerFields.dictionary;
 }

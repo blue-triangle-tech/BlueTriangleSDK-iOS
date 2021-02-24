@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <sys/utsname.h>
 
 @class BTTimer;
 
@@ -73,9 +74,23 @@
 - (void)clearGlobalField:(NSString *)fieldName;
 
 /*!
+    raise a test exception 
+ */
+- (void)raiseTestException:(NSString *)message;
+
+- (void)trackCrashes;
+
+- (NSString*) deviceName;
+
+/*!
  Get all the fields currently associated with this timer.
  @return Returns a Dictionary with all the fields currently.
  */
 - (NSDictionary *)allGlobalFields;
 
 @end
+
+extern NSString * _Nullable globalSiteID;
+extern NSString * _Nullable globalSessionID;
+extern NSString * _Nullable globalDeviceName;
+extern NSString * _Nullable globalGUID;
