@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   BlueTriangleSDK exposes methods to send analytics and crash data to the Blue Triangle portal via HTTP Post
                        DESC
 
-  s.homepage         = 'https://github.com/blue-triangle-tech/bluetriangle-ios-sdk/wiki'
+  s.homepage         = 'https://www.bluetriangle.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Julian Wilkison-Duran' => 'julian.wilkison@bluetriangle.com' }
-  s.source           = { :git => 'https://github.com/blue-triangle-tech/bluetriangle-ios-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/blue-triangle-tech/BlueTriangleSDK-iOS.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/_BlueTriangle'
 
   s.ios.deployment_target = '12.0'
