@@ -241,7 +241,7 @@ static void bttExceptionHandler(NSException *exception) {
     NSURLSession *sessionHits = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     //http://3.221.132.81/analytics.rcv
     //https://d.btttag.com/analytics.rcv
-    NSURL *hitsEndPoint = [NSURL URLWithString:@"http://3.221.132.81/analytics.rcv"];
+    NSURL *hitsEndPoint = [NSURL URLWithString:@"https://d.btttag.com/analytics.rcv"];
     NSMutableURLRequest *urlRequestHits = [[NSMutableURLRequest alloc] initWithURL:hitsEndPoint];
     [urlRequestHits setHTTPMethod:@"POST"];
     if (!errorHits) {
@@ -260,8 +260,13 @@ static void bttExceptionHandler(NSException *exception) {
     long roundedNowEpochSeconds = lroundf(nowEpochSeconds);
     NSString* stringEpoch = [NSString stringWithFormat:@"%li", roundedNowEpochSeconds];
     //NSString *appName = NSBundle.mainBundle.infoDictionary[@"CFBundleDisplayName"];
+    NSString *crashReportData =exception.debugDescription;
+    NSArray *split = [crashReportData componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    split = [split filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"length > 0"]];
+    NSString *res = [split componentsJoinedByString:@"~~"];
+    
     NSArray *crashReport = @[
-                         @{@"msg" : exception.debugDescription,
+                         @{@"msg" : res,
                            @"eTp" : @"NativeAppCrash",
                            @"eCnt" : @(1),
                            @"url" : @"iOS%20App",//this should be the app name
@@ -279,7 +284,8 @@ static void bttExceptionHandler(NSException *exception) {
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     //3.221.132.81
     //NSString *siteurl = @"https://d.btttag.com/err.rcv?";
-    NSString *siteurl = @"http://3.221.132.81/err.rcv?";
+    //http://3.221.132.81/err.rcv?
+    NSString *siteurl = @"https://d.btttag.com/err.rcv?";
     NSString *siteID = globalSiteID;
     NSString *nStart = timerNStart;
     NSString *pageName = [NSString stringWithFormat:@"iOSCrash-%@", globalDeviceName];
