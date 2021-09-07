@@ -84,7 +84,7 @@ static NSDictionary *defaultFields() {
                                                         kOrderNumber: @"",
                                                         kPageValue: @"0",
                                                         kContentGroupName: @"",
-                                                        kNativeOS: [NSString stringWithFormat:@"iOS %@", [device systemVersion]],
+                                                        kNativeOS: @"iOS",
                                                         kDevice: [[device model] isEqualToString:@"iPad"] ? @"Tablet" : @"Mobile",
                                                         kBrowser: @"Native App",
                                                         kBrowserVersion: [NSString stringWithFormat:@"Native App-%@-iOS %@",

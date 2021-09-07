@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlueTriangleSDK-iOS'
-  s.version          = '2.0.6'
+  s.version          = '2.0.8'
   s.summary          = 'BlueTriangleSDK exposes methods to send analytics and crash data to the Blue Triangle portal'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://www.bluetriangle.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Julian Wilkison-Duran' => 'julian.wilkison@bluetriangle.com' }
+  s.author           = { 'Joel Aliff' => 'joel.aliff@bluetriangletech.com' }
   s.source           = { :git => 'https://github.com/blue-triangle-tech/BlueTriangleSDK-iOS.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/_BlueTriangle'
 
