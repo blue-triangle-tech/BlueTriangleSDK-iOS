@@ -257,8 +257,8 @@ static void bttExceptionHandler(NSException *exception) {
     //send errors data next with matching session and navigation start
     NSDate *now = [NSDate date];
     NSTimeInterval nowEpochSeconds = [now timeIntervalSince1970];
-    long roundedNowEpochSeconds = lroundf(nowEpochSeconds);
-    NSString* stringEpoch = [NSString stringWithFormat:@"%li", roundedNowEpochSeconds];
+    NSInteger nowEpochMilliSeconds = floor(nowEpochSeconds * 1000);
+    NSString* stringEpochMilliSeconds = [NSString stringWithFormat:@"%li", nowEpochMilliSeconds];
     //NSString *appName = NSBundle.mainBundle.infoDictionary[@"CFBundleDisplayName"];
     NSString *crashReportData =exception.debugDescription;
     NSArray *split = [crashReportData componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
@@ -272,7 +272,7 @@ static void bttExceptionHandler(NSException *exception) {
                            @"url" : @"iOS%20App",//this should be the app name
                            @"line" : @(1),
                            @"col" : @(1),
-                           @"time" : stringEpoch,
+                           @"time" : stringEpochMilliSeconds,
                          }
                          ];
     //NSLog(@"crash report: %@",crashReport);
