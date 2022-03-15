@@ -298,8 +298,11 @@ static void bttExceptionHandler(NSException *exception) {
     NSString *CmpN = @"";
     NSString *CmpM = @"iOS%20Crash";
     NSString *CmpS = @"Direct";
+    NSString *os = @"iOS";
+    NSString *browser = @"Native%20App";
+    NSString *device = @"Mobile";
     
-    NSString *enquiryurl = [NSString stringWithFormat:@"%@siteID=%@&nStart=%@&pageName=%@&txnName=%@&sessionID=%@&pgTm=%@&pageType=%@&AB=%@&DCTR=%@&CmpN=%@&CmpM=%@&CmpS=%@",siteurl,siteID,nStart,pageName,txnName,sessionID,pgTm,pageType,AB,DCTR,CmpN,CmpM,CmpS];
+    NSString *enquiryurl = [NSString stringWithFormat:@"%@siteID=%@&nStart=%@&pageName=%@&txnName=%@&sessionID=%@&pgTm=%@&pageType=%@&AB=%@&DCTR=%@&CmpN=%@&CmpM=%@&CmpS=%@&os=%@&browser=%@&device=%@",siteurl,siteID,nStart,pageName,txnName,sessionID,pgTm,pageType,AB,DCTR,CmpN,CmpM,CmpS,os,browser,device];
     //NSLog(@"%@", enquiryurl);
     NSURL *errorRCV = [NSURL URLWithString:enquiryurl];
     
