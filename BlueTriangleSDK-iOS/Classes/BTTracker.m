@@ -257,8 +257,8 @@ static void bttExceptionHandler(NSException *exception) {
     //send errors data next with matching session and navigation start
     NSDate *now = [NSDate date];
     NSTimeInterval nowEpochSeconds = [now timeIntervalSince1970];
-    long roundedNowEpochSeconds = lroundf(nowEpochSeconds);
-    NSString* stringEpoch = [NSString stringWithFormat:@"%li", roundedNowEpochSeconds];
+    NSInteger nowEpochMilliSeconds = floor(nowEpochSeconds * 1000);
+    NSString* stringEpochMilliSeconds = [NSString stringWithFormat:@"%li", nowEpochMilliSeconds];
     //NSString *appName = NSBundle.mainBundle.infoDictionary[@"CFBundleDisplayName"];
     NSString *crashReportData =exception.debugDescription;
     NSArray *split = [crashReportData componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
@@ -272,7 +272,7 @@ static void bttExceptionHandler(NSException *exception) {
                            @"url" : @"iOS%20App",//this should be the app name
                            @"line" : @(1),
                            @"col" : @(1),
-                           @"time" : stringEpoch,
+                           @"time" : stringEpochMilliSeconds,
                          }
                          ];
     //NSLog(@"crash report: %@",crashReport);
@@ -298,8 +298,11 @@ static void bttExceptionHandler(NSException *exception) {
     NSString *CmpN = @"";
     NSString *CmpM = @"iOS%20Crash";
     NSString *CmpS = @"Direct";
+    NSString *os = @"iOS";
+    NSString *browser = @"Native%20App";
+    NSString *device = @"Mobile";
     
-    NSString *enquiryurl = [NSString stringWithFormat:@"%@siteID=%@&nStart=%@&pageName=%@&txnName=%@&sessionID=%@&pgTm=%@&pageType=%@&AB=%@&DCTR=%@&CmpN=%@&CmpM=%@&CmpS=%@",siteurl,siteID,nStart,pageName,txnName,sessionID,pgTm,pageType,AB,DCTR,CmpN,CmpM,CmpS];
+    NSString *enquiryurl = [NSString stringWithFormat:@"%@siteID=%@&nStart=%@&pageName=%@&txnName=%@&sessionID=%@&pgTm=%@&pageType=%@&AB=%@&DCTR=%@&CmpN=%@&CmpM=%@&CmpS=%@&os=%@&browser=%@&device=%@",siteurl,siteID,nStart,pageName,txnName,sessionID,pgTm,pageType,AB,DCTR,CmpN,CmpM,CmpS,os,browser,device];
     //NSLog(@"%@", enquiryurl);
     NSURL *errorRCV = [NSURL URLWithString:enquiryurl];
     

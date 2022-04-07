@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlueTriangleSDK-iOS'
-  s.version          = '2.0.8'
+  s.version          = '2.0.9'
   s.summary          = 'BlueTriangleSDK exposes methods to send analytics and crash data to the Blue Triangle portal'
 
 # This description is used to generate tags and improve search results.
